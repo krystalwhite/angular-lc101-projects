@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fav-photos.component.css']
 })
 export class FavPhotosComponent implements OnInit {
-  photosTitle = 'Photo/Image Section Title Here';
-  image1 = 'https://www.launchcode.org/assets/icons/target-00c7a0bc7776901e3c5cdc4c36c465f19e41a249bc7267a595f0bfa14ab944b7.png';
-  image2 = '';
-  image3 = '';
+  photosTitle = 'Krystal Recommends These TV Shows:';
+  image1 = 'https://m.media-amazon.com/images/M/MV5BNWQ1ZmM3MTQtNTVhZC00MWVlLWI5ZjgtYmZiYWQxZjUzZWM0XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_.jpg';
+  image2 = 'https://images-na.ssl-images-amazon.com/images/I/71LH4GfAaAL._SY445_.jpg';
+  image3 = 'https://m.media-amazon.com/images/M/MV5BMjUxMDEzNTYyN15BMl5BanBnXkFtZTgwMjQyMzg1NzM@._V1_.jpg';
 
   constructor() { }
 
