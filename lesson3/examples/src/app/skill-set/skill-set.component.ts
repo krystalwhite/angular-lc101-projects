@@ -10,7 +10,8 @@ export class SkillSetComponent implements OnInit {
    skills: string[] = ['Loops', 'Conditionals', 'Functions', 'Classes', 'Modules', 'Git', 'HTML/CSS'];
    alternateColor: string = 'lavender';
    bulletType: string = 'a';
-   changeColor: boolean = true;
+   changeColor: boolean = false;
+   changeOrder: string = "reversed";
 
    constructor() { }
 
