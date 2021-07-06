@@ -14,8 +14,6 @@ export class AppComponent {
   message = 'Space shuttle ready for takeoff!';
   // rocketImage = "assets/images/LaunchCode_rocketline_white.png";
 
-  // movement = parseInt(rocketImage.style.left) + 10 + 'px';
-
   handleTakeOff() {
     let result = window.confirm('Are you sure the shuttle is ready for takeoff?');
     if (result) {
@@ -46,33 +44,29 @@ export class AppComponent {
     }
   }
 
-  // handleUp() {
-  //      this.height += 10000;
-  //   }
-  
-  // handleDown() {
-  //     this.height -= 10000;
-  //  }
-
-  //  handleLeft() {
-  //    this.width -= 10;
-  //  }
-
-  //  handleRight() {
-  //    this.width += 10;
-  //  }
-
    moveRocket(rocketImage, direction) {
     if (direction === 'right') {
     let movement = parseInt(rocketImage.style.left) + 10 + 'px';
     rocketImage.style.left = movement;
     this.width = this.width + 10000;
     }
-    if (direction === 'rigleftht') {
-      let movement = parseInt(rocketImage.style.left) - 10 + 'px';
+    if (direction === 'left') {
+      let movement = parseInt(rocketImage.style.left) + -10 + 'px';
       rocketImage.style.left = movement;
-      this.width = this.width - 10000;
+      this.width = this.width + -10000;
       }
-  }
+    if (direction === 'up') {
+    let movement = parseInt(rocketImage.style.bottom) + 10 + 'px';
+    rocketImage.style.bottom = movement;
+    this.height = this.height + 10000;
+    }
+    if (direction === 'down') {
+      let movement = parseInt(rocketImage.style.bottom) - 10 + 'px';
+      rocketImage.style.bottom = movement;
+      this.height = this.height - 10000;
+      }
 
+  }
 }
+
+
