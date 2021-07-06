@@ -53,22 +53,33 @@ export class AppComponent {
     let movement = parseInt(rocketImage.style.left) + 10 + 'px';
     rocketImage.style.left = movement;
     this.width = this.width + 10000;
+    this.edgeWarning();
     }
     if (direction === 'left') {
       let movement = parseInt(rocketImage.style.left) + -10 + 'px';
       rocketImage.style.left = movement;
       this.width = this.width + -10000;
+      this.edgeWarning();
       }
     if (direction === 'up') {
     let movement = parseInt(rocketImage.style.bottom) + 10 + 'px';
     rocketImage.style.bottom = movement;
     this.height = this.height + 10000;
+    this.edgeWarning();
     }
     if (direction === 'down') {
       let movement = parseInt(rocketImage.style.bottom) - 10 + 'px';
       rocketImage.style.bottom = movement;
       this.height = this.height - 10000;
+      this.edgeWarning();
       }
+
+  }
+
+  edgeWarning() {
+    if (this.height >= 290000 || this.width <= 1000 || this.width >= 440000) {
+      this.color = "orange";
+    }
 
   }
 }
