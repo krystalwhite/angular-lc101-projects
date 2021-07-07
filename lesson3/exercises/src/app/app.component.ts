@@ -84,7 +84,7 @@ export class AppComponent {
   }
 
   edgeWarning() {
-    if (this.height < 0 || this.height >= 290000 || this.width < 1000 || this.width >= 440000) {
+    if (this.height < 0 || this.height > 300000 || this.width < 0 || this.width >= 440000) {
       this.color = "orange";
     } else {
       this.color = "blue";
@@ -98,7 +98,9 @@ export class AppComponent {
       this.leftEnabled = false; 
     } if (this.width >= 460000) {
       this.rightEnabled = false;
-    } */
+    } 
+    
+    */
   }
 }
 
