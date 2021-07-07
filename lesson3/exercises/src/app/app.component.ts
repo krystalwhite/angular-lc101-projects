@@ -89,19 +89,23 @@ export class AppComponent {
     } else {
       this.color = "blue";
     }
-  /*
+  }
+  
+  movementLock() {
     if (this.height < 0) {
       this.downEnabled = false;
     } if (this.height >= 320000) {
       this.upEnabled = false;
-    } if (this.width <= -10) {
+    } if (this.width < 0) {
       this.leftEnabled = false; 
     } if (this.width >= 460000) {
       this.rightEnabled = false;
     } 
-    
-    */
   }
-}
+    
+
+
+  }
+
 
 
